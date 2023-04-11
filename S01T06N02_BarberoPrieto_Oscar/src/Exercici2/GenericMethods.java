@@ -1,12 +1,11 @@
 package Exercici2;
 
-import java.util.ArrayList;
 
 public class GenericMethods {
 
-	public static <T> void imprimir(ArrayList<T> llista) {
+	public static <T> void imprimir(T... argument) {
 
-		for (T element : llista) {
+		for (T element : argument) {
 
 			System.out.println(element);
 
